@@ -15,8 +15,15 @@ OptionParser.new{|opt|
 # p option_hash
 # puts $0
 # ARGV.each {|arg| puts ": #{arg}!"}
+# print($hello)
 
 # argument check
 
 # execute command
+$icon_array.each{|value|
+  fname = value[:fname]
+  size = value[:size]
+  command = "echo #{fname} #{size}"
+  system(command)
+}
 
