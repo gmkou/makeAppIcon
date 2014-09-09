@@ -12,18 +12,17 @@ OptionParser.new{|opt|
   opt.parse!(ARGV)
 }
 
-# p option_hash
-# puts $0
-# ARGV.each {|arg| puts ": #{arg}!"}
-# print($hello)
-
 # argument check
+## @todo
 
 # execute command
+in_file = option_hash[:in]
+out_dir = option_hash[:out]
+
 $icon_array.each{|value|
   fname = value[:fname]
   size = value[:size]
-  command = "echo #{fname} #{size}"
+  command = "sips --resampleHeight #{size} #{in_file} --out #{out_dir}/#{fname}"
   system(command)
 }
 
