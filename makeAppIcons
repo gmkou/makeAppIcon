@@ -1,13 +1,13 @@
 #!/usr/bin/ruby
 
-## Include
+# Include
 require 'optparse'
 require './iconFileName'
 
-# environment check
-## @todo
+# variable check
+# @todo
 
-## Options
+# Options
 option_hash = {}
 OptionParser.new{|opt|
   opt.on('--in VAL') {|v| option_hash[:in] = v}    
