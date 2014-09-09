@@ -4,6 +4,9 @@
 require 'optparse'
 require './iconFileName'
 
+# environment check
+## @todo
+
 ## Options
 option_hash = {}
 OptionParser.new{|opt|
