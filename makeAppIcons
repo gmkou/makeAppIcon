@@ -1,0 +1,22 @@
+#!/usr/bin/ruby
+
+## Include
+require 'optparse'
+require './iconFileName'
+
+## Options
+option_hash = {}
+OptionParser.new{|opt|
+  opt.on('--in VAL') {|v| option_hash[:in] = v}    
+  opt.on('--out VAL') {|v| option_hash[:out] = v } 
+  opt.parse!(ARGV)
+}
+
+# p option_hash
+# puts $0
+# ARGV.each {|arg| puts ": #{arg}!"}
+
+# argument check
+
+# execute command
+
