@@ -2,7 +2,7 @@
 
 # Include
 require 'optparse'
-require './iconFileName'
+require_relative './iconFileName'
 
 # variable check
 # @todo
