@@ -1,3 +1,3 @@
-module MakeAppIcon
+module MakeAppIcons
   VERSION = "0.1.0"
 end
