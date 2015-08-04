@@ -2,7 +2,7 @@
 
 # Include
 require 'optparse'
-require_relative './iconFileName'
+require 'iconFileName'
 
 # variable check
 # @todo
@@ -10,8 +10,8 @@ require_relative './iconFileName'
 # Options
 option_hash = {}
 OptionParser.new{|opt|
-  opt.on('--in VAL') {|v| option_hash[:in] = v}    
-  opt.on('--out VAL') {|v| option_hash[:out] = v } 
+  opt.on('--in VAL') {|v| option_hash[:in] = v}
+  opt.on('--out VAL') {|v| option_hash[:out] = v }
   opt.parse!(ARGV)
 }
 
@@ -28,4 +28,3 @@ $icon_array.each{|value|
   command = "sips --resampleHeight #{size} #{in_file} --out #{out_dir}/#{fname}"
   system(command)
 }
-
