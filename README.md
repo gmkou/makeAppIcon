@@ -5,8 +5,8 @@ To generate iOS App Icons from command line.
 ## Usage
 
 ```
-$ cd makeAppIcons
-$ ./makeAppIcons --in sample/AppIcon.png  --out ./out
+$ cd makeAppIcon
+$ bundle exec bin/makeAppIcons --in sample/AppIcon.png  --out ./out
 ````
 
 ## Expects
