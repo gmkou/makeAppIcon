@@ -10,11 +10,11 @@ Gem::Specification.new do |spec|
   spec.email         = ["gm.charlie@gmail.com"]
 
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
+    spec.metadata['allowed_push_host'] = "http://mygemserver.com"
   end
 
   spec.summary       = "Generate iOS App Icons from command line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "http://gmkou.github.io/makeAppIcon/"
   spec.license       = "BSD"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
