@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'makeAppIcons/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "makeAppIcons"
-  spec.version       = MakeAppIcons::VERSION
+  spec.version       = "1.0.0"
   spec.authors       = ["Kosuke Nagano"]
   spec.email         = ["gm.charlie@gmail.com"]
 
