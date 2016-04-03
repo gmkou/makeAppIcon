@@ -1,65 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="makeAppIcons : Generate iOS App Icons from command line.">
+    <title>makeAppIcons by gmkou</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>makeAppIcons</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">makeAppIcons</h1>
+        <p class="header">Generate iOS App Icons from command line.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gmkou/makeAppIcon">View on GitHub</a>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/gmkou/makeAppIcon/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/gmkou/makeAppIcon/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/gmkou/makeAppIcon">View On GitHub</a></li>
+        </ul>
 
-          <h1 id="project_title">makeAppIcons</h1>
-          <h2 id="project_tagline">Generate iOS App Icons from command line.</h2>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/gmkou">gmkou</a></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gmkou/makeAppIcon/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gmkou/makeAppIcon/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-makeappicons-github-pages" class="anchor" href="#welcome-to-makeappicons-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to makeAppIcons GitHub Pages.</h3>
+      </header>
+      <section>
+        <h1>
+<a id="makeappicons" class="anchor" href="#makeappicons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>makeAppIcons</h1>
 
 <p>makeAppIcons is command line tool to generate multiple size of icons, you need for iOS applications.</p>
 
-<h3>
-<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Use</h3>
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
-<p><code>makeAppIcons --in {{YOUR_INPUT_ICON_FILE}}  --out {{YOUR_OUTPUT_DIRECTORY}}</code></p>
+<pre><code>$ gem install makeAppIcons
+</code></pre>
 
-<p>e.g.)
-<code>makeAppIcons --in sample/AppIcon.png  --out ./out</code></p>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
-<h3>
-<a id="expects" class="anchor" href="#expects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expects</h3>
+<pre><code>$ makeAppIcons --in {{YOUR_INPUT_ICON_FILE}}  --out {{YOUR_OUTPUT_DIRECTORY}}
+</code></pre>
+
+<p>e.g.)</p>
+
+<pre><code>$ makeAppIcons --in sample/AppIcon.png  --out ./out
+</code></pre>
+
+<h2>
+<a id="expects" class="anchor" href="#expects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expects</h2>
 
 <ul>
-<li>Platform has sips command.</li>
+<li>Platform has <code>sips</code> command. (maybe OS X only)</li>
 <li>Input file must be PNG format.</li>
 <li>Input file should be larger than 1024x1024.</li>
 </ul>
 
-<h3>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>BSD Lincense.</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h2>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h2>
 
 <p>This tool was build by <a href="https://github.com/gmkou" class="user-mention">@gmkou</a> initially. And contributed by ...</p>
 
@@ -68,22 +76,16 @@
 <li><a href="https://github.com/chadmart" class="user-mention">@chadmart</a></li>
 </ul>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h2>
 
 <p>Having trouble with this tool? Please submit your issue to <a href="https://github.com/gmkou/makeAppIcon/issues">github issues</a>.</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">makeAppIcons maintained by <a href="https://github.com/gmkou">gmkou</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-
-    
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
