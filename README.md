@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/makeAppIcons.svg)](https://badge.fury.io/rb/makeAppIcons)
+
 # makeAppIcons
 
 makeAppIcons is command line tool to generate multiple size of icons, you need for iOS applications.
