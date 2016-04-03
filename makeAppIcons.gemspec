@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kosuke Nagano"]
   spec.email         = ["gm.charlie@gmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "http://mygemserver.com"
-  end
-
   spec.summary       = "Generate iOS App Icons from command line."
   spec.homepage      = "http://gmkou.github.io/makeAppIcon/"
   spec.license       = "BSD"
