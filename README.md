@@ -34,6 +34,7 @@ BSD Lincense.
 This tool was build by @gmkou initially. And contributed by ...
 * @sassy
 * @chadmart
+* @touyou
 
 ## Support or Contact
 Having trouble with this tool? Please submit your issue to [github issues](https://github.com/gmkou/makeAppIcon/issues).
